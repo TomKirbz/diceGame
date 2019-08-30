@@ -5,3 +5,11 @@ header {
     font-size: 300%;
 }
 
+#player2Container {
+    
+}
+
+#new-game {
+    display: none;
+    visibility: hidden;
+}
