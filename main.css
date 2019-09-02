@@ -1,15 +1,245 @@
+body {
+    margin: 0;
+}
+
+.background {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    filter: blur(12px);
+  -webkit-filter: blur(12px);
+}
+
 header {
     display: flex;
     justify-content: center;
     margin: 40px 0 40px 0;
-    font-size: 300%;
+    font-size: 500%;
+    color: rgb(223, 224, 205);
 }
 
-#player2Container {
-    
+#main-container {
+    max-width: 2000px;
+    display: none;            /* will change to flex */
+    max-height: 2000px;
+    font-size: 300%;
+    color: rgb(223, 224, 205);
+    justify-content: center;
 }
+
+#player-1-container,
+#player-2-container {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px 50px 50px 50px;
+}
+
+#player-2-title,
+#player-1-title {
+    margin-bottom: 20px;
+}
+
+#p1-dice,
+#p2-dice {
+    border-radius: 10px;
+}
+
+#p1-dice-container,
+#p2-dice-container {
+    margin-top: 20px;
+    height: 200px;
+    width: 200px;
+    border: 6px solid rgb(195, 197, 174);
+    border-radius: 17px;
+}
+
+#go-back {
+    background-color: rgb(195, 197, 174);
+    padding: 0px 15px 0px 15px;
+    border: 5px solid black;
+    color: black;
+    border-radius: 15px;
+    margin: 0 0 0 10px;
+    cursor: pointer;
+    width: 180px;
+}
+
+
+#rules-button {
+    background-color: rgb(195, 197, 174);
+    padding: 0px 15px 0px 15px;
+    border: 5px solid black;
+    color: black;
+    border-radius: 15px;
+    margin: 0 0 0 10px;
+    cursor: pointer;
+}
+
+#the-rules {
+    display: none;
+    text-align: left;
+}
+
+#read-rules {
+    display: flex;
+    justify-content: center;
+}
+
 
 #new-game {
     display: none;
     visibility: hidden;
 }
+
+#new-game,
+.button {
+    margin-top: 50px;
+    width: 300px;
+    padding: 10px 0 10px 0;
+    font-size: 40px;
+    background-color: rgb(195, 197, 174);
+    border: 5px solid black;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+#new-game {
+    margin: 0 auto 0 auto;
+}
+
+#first-game-container {
+    position: absolute;
+    display: flex;
+    width: 1100px;
+    left: 370px;
+    flex-wrap: wrap;
+    text-align: center;
+    background-color: rgb(14, 53, 14);
+    padding: 0 50px 50px 50px;
+    border: 5px solid black;
+    font-size: 300%;
+    color: rgb(223, 224, 205);
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    width: 1100px;       
+}
+
+#no-players-2,
+#no-players-1 {
+    background-color: rgb(195, 197, 174);
+    padding: 10px 25px 10px 25px;
+    border: 5px solid black;
+    color: black;
+    border-radius: 15px;
+    margin: 0 60px 0 60px;
+    cursor: pointer;
+}
+
+#no-players-2:hover {
+    background-color: rgb(107, 109, 255);
+}
+
+#no-players-1:hover {
+    background-color: rgb(107, 109, 255);
+}
+#no-players-2:active {
+    background-color: rgb(50, 53, 255);
+}
+
+#no-players-1:active {
+    background-color: rgb(50, 53, 255);
+}
+
+#rules-button:hover {
+    background-color: rgb(107, 109, 255);
+}
+#rules-button:active {
+    background-color: rgb(50, 53, 255);
+}
+
+#go-back:hover {
+    background-color: rgb(107, 109, 255);
+}
+
+#go-back:active {
+    background-color: rgb(50, 53, 255);
+}
+
+
+#p1-input-name {
+    display: none;
+    height: 100px;
+    width: 500px;
+    font-size: 200%;
+}
+
+#p2-input-name {
+    display: none;
+    height: 100px;
+    width: 500px;
+    font-size: 200%;
+}
+
+#submitp1 {
+    background-color: rgb(195, 197, 174);
+    padding: 10px 25px 10px 25px;
+    border: 5px solid black;
+    color: black;
+    border-radius: 15px;
+    margin: 0 0 0 20px;
+    cursor: pointer;
+    display: none;
+    width: 165px;
+    align-items: center;
+}
+
+#submitp2 {
+    background-color: rgb(195, 197, 174);
+    padding: 10px 25px 10px 25px;
+    border: 5px solid black;
+    color: black;
+    border-radius: 15px;
+    margin: 0 0 0 20px;
+    cursor: pointer;
+    display: none;
+    width: 165px;
+    align-items: center;
+}
+
+#submitp1:hover {
+    background-color: rgb(107, 109, 255);
+}
+
+#submitp1:active {
+    background-color: rgb(50, 53, 255);
+}
+
+#input-field-p1 {
+    display: flex;
+}
+
+#input-field-p2 {
+    display: flex;
+}
+#game-text {
+    display: none;
+    position: absolute;
+    color: white;
+    top: 250px;
+}
+
+#game-updates {
+    position: absolute;
+    color: white;
+    top: 320px;
+}
+
+
+

@@ -8,24 +8,51 @@
     <title>Dice Game</title>
 </head>
 <body>
+    
     <header>
        <div class="title">The Dice Game!</div>    
     </header>
 
-    <button id="new-game">New Game</button>
-    <div class="player1">Player 1</div>
-    <div id="p1-score">0</div>
-    <button class="button">PLAY</button>
-    <div id="p1-diceContainer"><img id="p1-dice" src="" alt=""></div>
+<button id="new-game">New Game</button>
+        <div id="first-game-container">
+            <div id="first-game-text">
+                <h1 id="welcome-text">Welcome to the dice game!</h1>
+                <h3 id="how-many-players-text">Would you like 1 player or 2 players?</h3>
+                <h4 id="read-rules">First time? <div id="rules-button">The Rules!</div></h4>
+                <div id="the-rules"> <h4>The rules are quite simple</h4> 
+                <p>Roll the dice to add to your score</p>
+                <p>First to 20 wins!</p>
+                <p>However, if you Roll a 1, YOU LOSE!</p>
+                <div id="go-back">Go Back</div>
+                </div>
+                <div id="input-field-p1"><input id="p1-input-name"type="text" required><div id="submitp1">Confirm</div></div>
+                <div id="input-field-p2"><input id="p2-input-name"type="text" required><div id="submitp2">Confirm</div></div>
+            </div>
+            <div class="button-container"><div id="no-players-1">1 Player</div><div id="no-players-2">2 Players</div></div>
+        </div>
+    <div id="main-container">
+        <div id="player-1-container">
+            
+            <div id="player-1-title">Player 1</div>
+            <div id="p1-score">Score: 0</div>
+            <div id="p1-dice-container"><img id="p1-dice" src="" alt=""></div>
+            <button class="button">ROLL!!</button>
+        </div>
+    
+        <div id="player-2-container">
+            <div id="player-2-title">Player 2</div>
+            <div id="p2-score">Score: 0</div>
+            <div id="p2-dice-container"><img id="p2-dice" src="" alt=""></div>
+            <button class="button">ROLL!!</button>
+        </div>
 
-    <div id="player2Container">
-    <div class="player2">Player 2</div>
-    <div id="p2-score">0</div>
-    <button class="button">PLAY</button>
-    <div id="p2-diceContainer"><img id="p2-dice" src="" alt=""></div>
+        <div id="game-text"></div>
+        <div id="game-updates"></div>
+
     </div>
-
-
+    <div class="background">
+        <img src="https://i.pinimg.com/originals/b3/b3/3e/b3b33e861d6c05110ffe336fadd5396e.jpg" alt="" width="100%">
+    </div>
 
 
  <script src="script.js"></script>   
